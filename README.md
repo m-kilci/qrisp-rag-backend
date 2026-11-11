@@ -36,15 +36,21 @@ curl -X POST http://127.0.0.1:8000/chat \
 For the integrated chat, [run the Qrisp documentation preview](docs/setup.md#run-the-browser-interface)
 on port 8001 while the backend runs on port 8000.
 
+Try these questions in the chat:
+
+- What is Qrisp, and what is it used for?
+- How do I apply a Hadamard gate in Qrisp? Show a short Python example.
+- How do I measure a QuantumVariable? Show a short Python example.
+
 ## Documentation
 
-| Guide | Contents |
-| --- | --- |
-| [Setup and configuration](docs/setup.md) | Installation, tested versions, configuration, index preparation, and startup |
-| [Architecture and request flow](docs/architecture.md) | Components, module responsibilities, retrieval, and context selection |
-| [Indexing and stored data](docs/indexing.md) | Extraction, chunks, embeddings, record format, metadata, and rebuilds |
-| [API and frontend](docs/api-and-frontend.md) | HTTP contract, browser behavior, Markdown rendering, source links, and CORS |
-| [Testing and troubleshooting](docs/development.md) | Offline checks, retrieval diagnostics, and known limitations |
+| Guide                                                 | Contents                                                                     |
+| ----------------------------------------------------- | ---------------------------------------------------------------------------- |
+| [Setup and configuration](docs/setup.md)              | Installation, tested versions, configuration, index preparation, and startup |
+| [Architecture and request flow](docs/architecture.md) | Components, module responsibilities, retrieval, and context selection        |
+| [Indexing and stored data](docs/indexing.md)          | Extraction, chunks, embeddings, record format, metadata, and rebuilds        |
+| [API and frontend](docs/api-and-frontend.md)          | HTTP contract, browser behavior, Markdown rendering, source links, and CORS  |
+| [Testing and troubleshooting](docs/development.md)    | Offline checks, retrieval diagnostics, and known limitations                 |
 
 ## Limitations
 

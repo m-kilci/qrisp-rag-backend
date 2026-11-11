@@ -84,7 +84,24 @@ Changing the source path does not rebuild the index or change the browser site.
 
 ## Ollama host
 
-Install the configured models on the Ollama host. For remote inference, set
+Install Ollama on the machine that will host inference using the
+[official installation instructions](https://docs.ollama.com/quickstart).
+Start the Ollama app or service; if it is not already running, use `ollama serve`
+in a separate terminal. On that machine, download the tested models and check
+that they appear in the model list:
+
+```bash
+ollama pull qwen3:30b
+ollama pull nomic-embed-text
+ollama ls
+```
+
+`qwen3:30b` generates answers; `nomic-embed-text` generates document and query
+embeddings. If both are already installed on your Ollama host, no download is
+needed for a new backend checkout. These commands run outside the backend's
+Python environment; see the [Ollama CLI reference](https://docs.ollama.com/cli).
+
+For remote inference, set
 `OLLAMA_BASE_URL` to that host's reachable address and ensure its listening
 interface and firewall permit the backend's connection. Check connectivity using
 the configured host:
