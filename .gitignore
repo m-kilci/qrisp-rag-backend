@@ -2,3 +2,7 @@
 __pycache__/
 *.py[cod]
 .env
+
+data/embeddings.json
+data/embeddings.metadata.json
+local-backups/
